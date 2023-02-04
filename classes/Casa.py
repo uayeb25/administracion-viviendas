@@ -6,7 +6,7 @@ class Casa:
         self.numero = numero
         self.metrosConstruccion = metrosConstruccion
         self.cliente = cliente
-        self.cliente.casas.append(self)
+        self.cliente.casas[self.numero] = self
         print('Casa objeto instanciado')
 
     def info_casa(self):
